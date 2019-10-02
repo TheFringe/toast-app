@@ -1,0 +1,125 @@
+//include material theming
+@import '~@angular/material/theming';
+@include mat-core();
+$flintab-red: (
+    50 : #fcf3f3,
+    100 : #f9e0e0,
+    200 : #f5cccc,
+    300 : #f0b8b8,
+    400 : #eda8a8,
+    500 : #ea9999,
+    600 : #e79191,
+    700 : #e48686,
+    800 : #e17c7c,
+    900 : #db6b6b,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffeaea,
+    A700 : #ffd0d0,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$flintab-yellow: (
+    50 : #fcf3f3,
+    100 : #f9e0e0,
+    200 : #f5cccc,
+    300 : #f0b8b8,
+    400 : #eda8a8,
+    500 : #ea9999,
+    600 : #e79191,
+    700 : #e48686,
+    800 : #e17c7c,
+    900 : #db6b6b,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffeaea,
+    A700 : #ffd0d0,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$flintab-red-gray: (
+  50: #eceff1,
+  100: #cfd8dc,
+  200: #c5b0b3,
+  300: #ae9090,
+  400: #9c7878,
+  500: #8b6060,
+  600: #7a5454,
+  700: #644545,
+  800: #4f3737,
+  900: #382626,
+  A100: #dccfcf,
+  A200: #c5b0b0,
+  A400: #9c7878,
+  A700: #644545,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+// Define the light theme
+$light-app-primary: mat-palette($mat-teal);
+$light-app-accent:  mat-palette($mat-green, A200, A100, A400);
+$light-app-theme:   mat-light-theme($light-app-primary, $light-app-accent);
+
+// Include the light theme styles.
+@include angular-material-theme($light-app-theme);
+
+
+// Define an dark theme.
+$dark-primary: mat-palette($mat-blue-grey);
+$dark-accent:  mat-palette($mat-amber, A200, A100, A400);
+$dark-warn:    mat-palette($mat-deep-orange);
+$dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+
+// themes will be switched based on class names, angular will switch classes which will trigger the theme change
+.dark-theme{ 
+  @include angular-material-theme($dark-theme);
+}
+
+.light-theme{
+  @include angular-material-theme($light-app-theme);
+}

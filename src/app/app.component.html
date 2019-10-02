@@ -1,5 +1,5 @@
 <hello name="{{ name }}"></hello>
-
+<app-theme-switcher></app-theme-switcher>
 <mat-card>
   <h1>Mat snackbar</h1>
   <button mat-button (click)="sendError()">Error</button><br />
@@ -12,13 +12,13 @@
 </mat-card>
 <mat-card>
   <h1>Ngx-toastr</h1>
-  <button mat-button (click)="sendError2()">Error</button><br />
+  <button mat-stroked-button (click)="sendError2()">Error</button>
 
-  <button mat-button (click)="sendSuccess2()">Success</button><br />
+  <button mat-stroked-button color="primary" (click)="sendSuccess2()">Success</button>
 
-  <button mat-button (click)="sendInfo2()">Info</button><br />
+  <button mat-stroked-button color="accent" (click)="sendInfo2()">Info</button>
 
-  <button mat-button (click)="sendWarning2()">Warning</button><br />
+  <button mat-stroked-button color="warn" (click)="sendWarning2()">Warning</button>
 </mat-card>
   <app-toast></app-toast>
   <app-toastr></app-toastr>
