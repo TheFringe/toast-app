@@ -35,20 +35,20 @@ $flintab-red: (
 );
 
 $flintab-yellow: (
-    50 : #fcf3f3,
-    100 : #f9e0e0,
-    200 : #f5cccc,
-    300 : #f0b8b8,
-    400 : #eda8a8,
-    500 : #ea9999,
-    600 : #e79191,
-    700 : #e48686,
-    800 : #e17c7c,
-    900 : #db6b6b,
+    50 : #fffaed,
+    100 : #fff4d1,
+    200 : #ffecb3,
+    300 : #ffe494,
+    400 : #ffdf7d,
+    500 : #ffd966,
+    600 : #ffd55e,
+    700 : #ffcf53,
+    800 : #ffca49,
+    900 : #ffc038,
     A100 : #ffffff,
     A200 : #ffffff,
-    A400 : #ffeaea,
-    A700 : #ffd0d0,
+    A400 : #fff5e1,
+    A700 : #ffedc8,
     contrast: (
         50 : #000000,
         100 : #000000,
@@ -66,6 +66,10 @@ $flintab-yellow: (
         A700 : #000000,
     )
 );
+
+
+
+
 
 $flintab-red-gray: (
   50: #eceff1,
@@ -110,7 +114,7 @@ $light-app-theme:   mat-light-theme($light-app-primary, $light-app-accent);
 
 
 // Define an dark theme.
-$dark-primary: mat-palette($mat-blue-grey);
+$dark-primary: mat-palette($flintab-red-gray);
 $dark-accent:  mat-palette($mat-amber, A200, A100, A400);
 $dark-warn:    mat-palette($mat-deep-orange);
 $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
