@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 
-import {Message} from './message';
-import {MessageType} from './message-type.enum';
+import {Message} from './toast/message';
+import {MessageType} from './toast/message-type.enum';
 
 @Injectable()
 export class ToastService {
@@ -24,7 +24,7 @@ export class ToastService {
     this.subject.next({message:message, type:MessageType.Warning});
   }
 
-  public addSucsess(message:string){
+  public addSuccess(message:string){
     this.subject.next({message:message, type:MessageType.Success});
   }
 }
