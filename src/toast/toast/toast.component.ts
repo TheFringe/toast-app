@@ -13,7 +13,7 @@ export class ToastComponent implements OnInit {
       next: (resp: Message) => {
         this.snackBar.open(resp.message, resp.type, {
           duration: 20000,
-          panelClass: ["error"]
+          panelClass: resp.type.toLowerCase()
         });
       }
     });

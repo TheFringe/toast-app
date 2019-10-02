@@ -2,5 +2,17 @@
 @import '@angular/material/prebuilt-themes/pink-bluegrey.css';
 
 .error, .Error{
-  background-color: red !important;
+  background-color: coral !important;
+}
+
+.success{
+  background-color: lightgreen;
+}
+
+.warning{
+  background-color:#eced9d;
+}
+
+.info{
+  background-color: lightblue;
 }
