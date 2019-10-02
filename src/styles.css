@@ -1,5 +1,6 @@
 /* Add application styles & imports to this file! */
 @import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+@import './toastr/toaster.scss';
 
 .error, .Error{
   background-color: coral !important;
