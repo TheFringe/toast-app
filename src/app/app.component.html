@@ -1,6 +1,13 @@
 <hello name="{{ name }}"></hello>
 
-<mat-card>This is a card
-  <button (click)="sendError()">Show error</button>
+<mat-card>
+  <h1>This is a card</h1>
+  <button mat-button (click)="sendError()">Error</button><br />
+
+  <button mat-button (click)="sendSuccess()">Success</button><br />
+
+  <button mat-button (click)="sendInfo()">Info</button><br />
+
+  <button mat-button (click)="sendWarning()">Warning</button><br />
 </mat-card>
   <app-toast></app-toast>

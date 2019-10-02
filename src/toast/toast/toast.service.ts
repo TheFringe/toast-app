@@ -12,8 +12,19 @@ export class ToastService {
 
   constructor() { }
 
-  addError(message:string){
+  public addError(message:string){
     this.subject.next({message:message, type:MessageType.Error});
   }
 
+  public addInfo(message:string){
+    this.subject.next({message:message, type:MessageType.Info});
+  }
+
+  public addWarning(message:string){
+    this.subject.next({message:message, type:MessageType.Warning});
+  }
+
+  public addSucsess(message:string){
+    this.subject.next({message:message, type:MessageType.Success});
+  }
 }

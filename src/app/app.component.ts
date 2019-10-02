@@ -14,4 +14,13 @@ constructor(private ts:ToastService){
   sendError(){
     this.ts.addError("Jag är ett fel!");
   }
+  sendInfo(){
+    this.ts.addInfo("Jag är Info!");
+  }
+  sendWarning(){
+    this.ts.addWarning("Jag är en varning!");
+  }
+  sendSuccess(){
+    this.ts.addSuccess("Jag är lyckad!");
+  }
 }
