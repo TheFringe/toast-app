@@ -1,13 +1,17 @@
 @import '~ngx-toastr/toastr';
 .ngx-toastr{
   box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12) !important;
+  background-color: #545454;
 }
 .toast-error{
-  background-color: #8b6060;
+  background-color: #a33636;
 }
 .toast-success{
-  background-color:teal;
+  background-color:#247044;
 }
 .toast-warning{
-  background-color: #ffcf53;
+  background-color: #a36b36d3;
+}
+.toast-show{
+  background-color: #4a36fca8;
 }

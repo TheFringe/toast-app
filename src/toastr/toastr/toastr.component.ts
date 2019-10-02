@@ -26,7 +26,11 @@ export class ToastrComponent implements OnInit {
             break;
           }
           case MessageType.Info: {
-            toastr.show(resp.message);
+            toastr.show(resp.message,null, {
+              disableTimeOut: true,
+              closeButton: true,
+              timeOut: 20000
+            });
             break;
           }
           case MessageType.Success: {
